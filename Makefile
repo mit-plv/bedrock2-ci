@@ -1,4 +1,6 @@
 
+default_target: bedrock2
+
 .PHONY: update_all clone_all bbv riscv-coq bedrock2
 
 clone_all:
