@@ -1,0 +1,9 @@
+[submodule "bbv"]
+	path = bbv
+	url = ../../mit-plv/bbv.git
+[submodule "riscv-coq"]
+	path = riscv-coq
+	url = ../../mit-plv/riscv-coq.git
+[submodule "bedrock2"]
+	path = bedrock2
+	url = ../../mit-plv/bedrock2.git
