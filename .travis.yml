@@ -14,4 +14,4 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install $COQ_PACKAGE -y
 
-script: travis_wait 999 env EXPECTED_COQC_VERSION="$(coqc --version | sed -n 's/The Coq Proof Assistant, version \([^ ]*\) .*/\1/p')" make $TARGETS TIMED=1 -j2
+script: travis_wait 999 env EXPECTED_COQC_VERSION="$(coqc --version | sed -n 's/The Coq Proof Assistant, version \([^ ]*\) .*/\1/p')" make -j2
