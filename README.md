@@ -1,4 +1,4 @@
-# Continuous Integration for bedrock2
+# Continuous Integration for bedrock2 [![Build Status](https://travis-ci.org/mit-plv/bedrock2-ci.svg?branch=master)](https://travis-ci.org/mit-plv/bedrock2-ci)
 
 ## Build
 
