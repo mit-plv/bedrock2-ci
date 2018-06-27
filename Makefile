@@ -5,11 +5,11 @@ default_target: bedrock2
 
 # Note: not --recursive, because we don't want to clone the deps in ./bedrock2/deps/
 clone_all:
-   git submodule update --init
+	git submodule update --init
 
 # Note: not --recursive, because we don't want to clone the deps in ./bedrock2/deps/
 update_all:
-   git submodule update --remote
+	git submodule update --remote
 
 bbv:
 	$(MAKE) -C ./bbv
