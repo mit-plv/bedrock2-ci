@@ -2,6 +2,9 @@ language: generic
 sudo: required
 dist: trusty
 
+git:
+  submodules: false
+
 matrix:
   fast_finish: true
   include:
@@ -14,4 +17,7 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install $COQ_PACKAGE -y
 
-script: env EXPECTED_COQC_VERSION="$(coqc --version | sed -n 's/The Coq Proof Assistant, version \([^ ]*\) .*/\1/p')" make -j2
+before_script:
+  - make clone_all
+
+script: make -j2
